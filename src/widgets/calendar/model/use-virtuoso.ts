@@ -36,11 +36,13 @@ export const useVirtuoso = ({ todayGroupIndex, setVisibleDateIndex, addPrevDays,
     }, [todayGroupIndex]);
 
     useLayoutEffect(() => {
-        setTimeout(() => {
-            scrollToIndex(todayGroupIndex);
+        if (isFirstRender) {
+            setTimeout(() => {
+                scrollToIndex(todayGroupIndex);
 
-            setIsFirstRender(false);
-        }, 200)
+                setIsFirstRender(false);
+            }, 200)
+        }
     }, [isFirstRender, todayGroupIndex]);
 
     return {
