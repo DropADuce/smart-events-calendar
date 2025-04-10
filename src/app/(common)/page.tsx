@@ -1,5 +1,3 @@
-import {Calendar} from "@/widgets/calendar";
-
-export default function Main() {
-    return <Calendar />
+export default function MainPage() {
+  return <h1>Что нибудь тут точно попозже будет!</h1>;
 }

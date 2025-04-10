@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "batman@mail.ru",
+      "username": "Batman",
+      "name": "Брюс",
+      "lastname": "Вейн",
+      "password": "Robin488"
+    }
+  ]
+}
